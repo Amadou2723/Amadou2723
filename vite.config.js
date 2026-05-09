@@ -2,11 +2,15 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
+const base = '/amadou2723/'
+
 export default defineConfig({
+  base,
   plugins: [
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      base,
       includeAssets: ['favicon.ico', 'icons/*.png'],
       manifest: {
         name: 'Boutique Amadou',
@@ -16,8 +20,8 @@ export default defineConfig({
         background_color: '#ffffff',
         display: 'standalone',
         orientation: 'portrait-primary',
-        start_url: '/',
-        scope: '/',
+        start_url: '/amadou2723/',
+        scope: '/amadou2723/',
         lang: 'fr',
         categories: ['shopping'],
         icons: [
