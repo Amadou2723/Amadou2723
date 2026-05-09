@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - claude/mobile-ecommerce-app-rpGL1
   workflow_dispatch:
 
 permissions:
